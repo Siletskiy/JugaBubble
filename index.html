@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JugaBubble</title>
+    <style>
+      body {
+        margin: 0;
+        margin-top: 17px;
+        padding: 0;
+        font-size: 18px;
+        height: 100vh;
+        font-family: Roboto, Arial, sans-serif;
+        color: #ffffff;
+        background: url("background.png");
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+      }
+      .container {
+        text-align: center;
+        margin-left: 15px;
+        margin-right: 15px;
+      }
+      .info {
+        background: #1325c2;
+        color: #ffffff;
+        padding: 10px;
+        border: 2px solid #3900e4;
+        box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.5);
+        margin: 0 0 16px 0;
+        text-align: center;
+        overflow: hidden;
+        overflow-y: auto;
+      }
+      .info * {
+        opacity: 1;
+      }
+      .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 18px;
+        margin: 22px 0 22px 0;
+      }
+      button {
+        background: #1325c2;
+        border: 2px solid #3900e4;
+        padding: 10px 10px;
+        color: #ffffff;
+        font-size: 22px;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom: 22px;
+        box-sizing: border-box;
+        font-family: inherit;
+        font-weight: 700;
+      }
+      p {
+        font-size: 19px;
+        font-weight: 500;
+        line-height: 24.88px;
+        text-align: left;
+        margin: 10px;
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="logo.png"
+      width="160"
+      height="160"
+      style="display: block; margin: 0 auto 15px auto"
+    />
+    <div class="container">
+      <div class="info">
+<p>JugaBubble initiates its runtime with a dedicated introduction screen. Once the loading procedure concludes, the application presents its primary menu, which routes the operator toward the central play module, a records board with historical results, a decorative theme selection panel, and the configuration section. An optional quiz segment is likewise reachable from this menu for testing the operator's familiarity with the application.</p>
+<p>The central module of JugaBubble tasks the operator with clearing fields of colored spheres. The software arranges clusters of bubbles across the playing area, and the operator launches matching spheres to assemble groups of identical color. When a group of sufficient size is formed, it dissolves and increments the session counter. Timing and aiming precision determine how efficiently each field is cleared, and misdirected launches expand the cluster instead of reducing it.</p>
+<p>Counters accumulated during play sessions are spent inside the theme selection panel to activate alternative visual sets for the spheres and the playing field. JugaBubble retains peak session results and cumulative totals in local storage and displays them in the records board so the operator can compare performance across sessions.</p>
+<p>A standalone options dialog within JugaBubble allows the operator to switch sound output on or off, erase all stored progression data, or step back to the primary menu. If the cluster of spheres reaches the boundary line, the active session terminates and a closing dialog is shown. This dialog offers the operator structured choices: replay the current field from the start, continue with a new field, or return to the primary menu.</p>
+      </div>
+      <div class="buttons">
+        <button id="jugabubble">PLAY</button>
+      </div>
+    </div>
+  </body>
+</html>
